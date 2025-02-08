@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Yekan";
+  src: url(fonts/yekan-regular.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Yekan;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  > .container {
+    width: 100%;
+    height: auto;
+    padding: 20px 30px;
+    display: flex;
+    gap: 2%;
+
+    > .form_container {
+      position: relative;
+      width: 24%;
+      height: 100vh;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      > .filter {
+        position: fixed;
+        width: 24%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        padding: 0 10px;
+
+        > .item {
+          width: 100%;
+          display: flex;
+          gap: 5px;
+          margin-bottom: 15px;
+
+          > label {
+            width: 25%;
+            height: 40px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            /* border: 1px solid #00000075; */
+            background-color: #a51e1e;
+            color: #fff;
+            font-size: 13px;
+          }
+
+          > select {
+            width: 75%;
+            height: 40px;
+            border: none;
+            outline: none;
+            padding: 0 10px;
+            border-radius: 5px;
+            border: 1px solid #00000075;
+
+            &:appearance {
+              margin-left: 10px;
+            }
+          }
+
+          > input {
+            width: 75%;
+            height: 40px;
+            border: none;
+            outline: none;
+            padding: 0 10px;
+            border-radius: 5px;
+            border: 1px solid #00000075;
+            font-size: 14px;
+          }
+
+          input[type="number"]::-webkit-inner-spin-button,
+          input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+          > button {
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background-color: rgb(9, 118, 9);
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      > .footer-me {
+        position: fixed;
+        width: 200px;
+        right: 90px;
+        bottom: 20px;
+
+        > h3 {
+          font-size: 18px;
+          text-align: center;
+        }
+
+        > .line {
+          width: 90%;
+          margin: auto;
+          height: 3px;
+          background-color: #361080;
+        }
+
+        > .social {
+          display: flex;
+          width: 50%;
+          margin: auto;
+          justify-content: space-between;
+
+          > a {
+            color: inherit;
+
+            &:active {
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+
+    > .product_container {
+      width: 74%;
+      height: auto;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2%;
+
+      > .product {
+        width: 32%;
+        height: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
+        > .img-product {
+          width: 100%;
+          height: 80%;
+          overflow: hidden;
+          border: 1px solid #0000005b;
+          border-radius: 10px;
+
+          > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        > .content {
+          width: 100%;
+          height: 20%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+          padding: 10px;
+
+          > .name-product {
+            font-size: 22px;
+          }
+
+          > .color-product {
+            width: 100%;
+            font-size: 16px;
+          }
+
+          > .price-product {
+            width: 100%;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
