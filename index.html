@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products filter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form_container">
+            <form class="filter">
+                <div class="item">
+                    <label for="category">دسته بندی</label>
+                    <select name="category">
+                        <option value="">انتخاب کنید</option>
+                        <option value="jacket">کاپشن</option>
+                        <option value="Sweatshirt">سویشرت</option>
+                        <option value="hoodie">هودی</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label for="color">رنگ</label>
+                    <select name="color">
+                        <option value="">انتخاب کنید</option>
+                        <option value="مشکی">مشکی</option>
+                        <option value="سرمه ای">سرمه ای</option>
+                        <option value="سبز روشن">سبز روشن</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label for="nameProduct">نام محصول</label>
+                    <input type="text" name="nameProduct">
+                </div>
+                <div class="item">
+                    <label for="minPrice">کمترین قیمت</label>
+                    <input type="number" name="minPrice">
+                </div>
+                <div class="item">
+                    <label for="maxPrice">بیشترین قیمت</label>
+                    <input type="number" name="maxPrice">
+                </div>
+                <div class="item submit">
+                    <button>جستجو</button>
+                </div>
+            </form>
+            <div class="footer-me">
+                <h3>Alireza Hasanpour</h3>
+                <div class="line"></div>
+                <div class="social">
+                    <a href="https://www.instagram.com/alireza_hasanpour_frontend">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alireza-hasanpour-frontend/">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/alirezafrontend/">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="product_container">
+            <!-- <div class="product">
+                <div class="img-product">
+                    <img src="img/img1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="name-product">کاپشن مردانه جوتی جینز</h3>
+                    <span class="color-product">رنگ : سبز</span>
+                    <span class="price-product">قیمت : 150000 تومان</span>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
